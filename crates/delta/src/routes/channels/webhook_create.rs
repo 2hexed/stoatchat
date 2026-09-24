@@ -78,12 +78,13 @@ pub async fn create_webhook(
 
 #[cfg(test)]
 mod tests {
-    use super::*;#[cfg(test)]
-mod test {
+    use super::*;
     use crate::{rocket, util::test::TestHarness};
     use revolt_database::{Member, Server};
     use revolt_models::v0;
     use rocket::http::{Header, Status};
+    use revolt_database::util::reference::Reference;
+    use rocket::State;
 
     #[rocket::async_test]
     async fn create_webhook_success() {
@@ -161,10 +162,6 @@ mod test {
 
         assert_eq!(response.status(), Status::Forbidden);
     }
-}
-
-    use revolt_database::util::reference::Reference;
-    use rocket::State;
 
     #[tokio::test]
     async fn test_fetch_webhooks_permission_denied() {
