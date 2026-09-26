@@ -3,7 +3,7 @@
 This page documents various incoming and outgoing events.
 
 :::warning
-Legacy documentation, superseeded by [Events](/developers/protocols).
+Legacy documentation, superseeded by new [Protocols](/developers/events/protocols) documentation.
 :::
 
 ## Client to Server
