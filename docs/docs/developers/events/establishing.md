@@ -54,4 +54,4 @@ Example:
 ?ready=users&ready=servers&ready=user_settings[ordering]
 ```
 
-You may specify these params in the connection URL: `wss://stoat.chat/events?version=1&format=json`.
+You may specify these params in the connection URL: `wss://events.stoat.chat/?version=1&format=json`.
